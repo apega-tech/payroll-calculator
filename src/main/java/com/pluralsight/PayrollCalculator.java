@@ -1,4 +1,4 @@
-package com.pluralsigth;
+package com.pluralsight;
 
 import java.util.Scanner;
 
@@ -6,7 +6,7 @@ public class PayrollCalculator {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-       String name= propmtForName(scanner);
+       String name= promptForName(scanner);
        double hours= promptForHours(scanner);
        double payRate = promptForPayRate(scanner);
 
@@ -15,7 +15,7 @@ public class PayrollCalculator {
        displayResult(name, grossPay);
     }
 
-    public static String propmtForName(Scanner scanner){
+    public static String promptForName(Scanner scanner){
         System.out.print("Enter employee name: ");
         return scanner.nextLine();
     }
